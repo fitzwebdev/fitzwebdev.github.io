@@ -1,0 +1,50 @@
+main {
+    text-align: center;
+}
+h2  {
+    font-size: 3rem;
+    text-align: center;
+    padding: 3rem;
+}
+
+
+.series-title {
+    text-decoration: none;
+    display: inline-block;
+    margin: 4rem 3rem;
+    /* border: 3px solid blue; */
+    border-radius: 4px;
+    overflow: hidden;
+}
+.series-title:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+.book-title {
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: .5rem;
+}
+.book-page-title {
+    font-size: 2rem;
+}
+.book-pic {
+    border: 2px solid #000000;
+    border-radius: 3px;
+}
+/* transform positions for shake animation */
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}

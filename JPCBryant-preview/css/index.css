@@ -1,0 +1,117 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+	background-color: #FC8C17;
+	font-family: 'Reenie Beanie', cursive;
+}
+.intro {
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	background: url('../resources/JoshCover1.jpg') no-repeat 50% 50%;
+	display: table;
+	top: 0;
+	background-size: cover;
+}
+.intro .inner {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
+}
+.content {
+	max-width: 700px;
+	margin: 0 auto;
+	text-align: center;
+}
+.content h1 {
+	color: #29A3DF;
+	text-shadow: 2px 2px #000000, 5px 5px 30px #FFFFFF;
+	/* padding: 10px; */
+	font-size: 9rem;
+}
+.btn {
+	border-radius: 9px;
+	color: #29A3DF;
+	font-size: 32px;
+	padding: 10px 20px;
+	border: solid #29A3DF 3px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bolder;
+}
+.btn:hover {
+	color: #FC8C17;
+	border: solid #FC8C17 3px;
+}
+/* social media bar */ 
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  color: #FC8C17;
+  font-size: 2rem;
+}
+
+/* p {
+	text-align: center;
+	color: #000000;
+	background-color: #00E5B3;
+	margin: 20px auto;
+} */
+@media screen and (max-width: 768px) {
+	.content h1 {
+		font-size: 50px;
+	}
+	.btn {
+		font-size: 24px;
+		padding: 7px 15px;
+	}
+	.icon-bar a {
+		padding: 10px;
+		font-size: 24px;
+	}
+	.intro {
+		background: url('../resources/JoshCover2.jpg') no-repeat; 
+	}
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

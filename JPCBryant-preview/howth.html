@@ -17,6 +17,7 @@
     <header>
          <nav>
             <ul id="navbar">
+                    <a class="icon-bar logo" href="index.html"><i class="icon"></i></a>
                     <a class="icon-bar" href="https://facebook.com/authorjpcbryant/" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a> 
                     <a class="icon-bar" href="https://twitter.com/JpcBryant" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a> 
                     <a class="icon-bar" href="https://instagram.com/jpc_bryant/?hl=en" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
@@ -35,6 +36,7 @@
         </nav>
     </header>
     <main>
+            <section class="wrapper">
         <h2>A Detective's Tale:</h2>
             <div class="book-title book-page-title">Howling Hills of Howth</div>
             <img class="book-pic" src="resources/howth.jpg" alt="howing hills of howth." title="Howling Hills of Howth">
@@ -44,7 +46,7 @@
             <!-- begin purhcase code -->
             
             <form>
-            <select name="list" id="list" accesskey="target" >
+            <select name="list" id="list" accesskey="target" class="vendor">
                 <option value='none' selected>Select Vendor</option>
                 <option value="https://amzn.to/2NxtOlc">Amazon(Kindle)</option>
                 <option value="https://www.barnesandnoble.com/w/howling-hills-of-howth-jpc-bryant/1129437542?ean=9780692181546">Barnes & Noble(Nook)</option>
@@ -59,13 +61,14 @@
                 <option value="http://www.blio.com/web1/actions/searchHandler.do?key=9780692181546&nextPage=booksDetails&parentNum=12848">Blio</option>
                 <option value="https://bookshout.com/ebooks/howling-hills-of-howth">Bookshout</option>
             </select>
-            <input id="btn" type="button" value="Purchase From This Vendor" onclick="goToNewPage()"/>
+            <input class="purchase" id="btn" type="button" value="Purchase From This Vendor" onclick="goToNewPage()"/>
             </form>
             <!-- end purchase code -->
+            </section>
     </main>
     <footer>
         <div class="legal">
-            <a href="#">Privacy Policy</a></br>
+            <a href="privacy-policy.html">Privacy Policy</a></br>
         </div>
         <div class="copyright">
             <p2>&copy; Bryant Books, LLC. All Rights Reserved.</p2></br>

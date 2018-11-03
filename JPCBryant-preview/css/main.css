@@ -3,6 +3,11 @@
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+body {
+    background: url('../resources/bookbackground.jpg') no-repeat 50% 50%;
+    background-size: cover;
+
+}
 .handwritten {
     font-family: 'Reenie Beanie', cursive;
     font-weight: bold;
@@ -15,7 +20,7 @@
     text-align: center;
     padding: 3rem;
 }
-/* start navigation setup for all pages */
+/* navigation */
 nav ul {
     text-align: right;
     position: fixed;
@@ -39,11 +44,15 @@ nav ul li a:hover {
     border-top: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
 }
-main {
+.wrapper {
     padding-top: 4rem;
     padding-bottom: 5rem;
-    background-color: #FC8C17;
+    background-color: #99999B;
     min-height: 100vh;
+    width: 70%;
+    margin: 0 auto;
+    border-left: 3px solid #FC8C17;
+    border-right: 3px solid  #FC8C17
 }
 .icon-bar {
     float: left;
@@ -53,7 +62,14 @@ main {
     font-size: 2rem;
     transition: .5s;
 }
-.icon-bar:hover{
+.icon {
+    background: url('../resources/logo.png') no-repeat 50% 50%;
+    height: 3rem;
+    width: 5rem;
+    border-radius: 3px;
+    display: block;
+}
+.icon-bar:hover:not(.logo) {
     color: #FC8C17;
     transform: rotate(360deg);
 }
@@ -70,6 +86,7 @@ footer {
 }
 .legal {
     padding: 1.25rem;
+    color: #ffffff;
 }
 .copyright {
     padding-bottom: 1rem;
@@ -91,13 +108,15 @@ p {
     font-size: 1.5rem;
     line-height: 2.7rem;
 }
+/* for welcome message links */
 p a{
     text-decoration: none;
     color: white;
 }
 p a:hover {
-    color: #29A3DF;
+    color: #FC8C17;
 }
+/* ------------------------ */
 p2 {
     font-size: 1rem;
 }
@@ -107,8 +126,7 @@ p2 {
     border: 3px solid #000000;
     border-radius: 20px;
 }
-/* submenu testing */
-/* https://stackoverflow.com/questions/40956571/how-to-make-a-nested-sub-menu-on-horizontal-navigation-bar-vertical */
+/* submenu  */
 nav ul li ul li {
     display: block;
     float: none !important; 
@@ -123,3 +141,45 @@ nav li ul {
 nav li:hover ul {
     display:block;
 }
+.vendor,
+.purchase {
+    font-size: 1rem;
+    padding: .5rem;
+    background-color: #29A3DF;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    margin: .5rem;
+}
+/* to make button same size as select */
+.purchase {
+    padding: .55rem;
+}
+.vendor:hover,
+.purchase:hover {
+    background-color: rgb(23, 96, 133)
+}
+
+footer {
+    color: #ffffff;
+}
+/*  */
+a {
+    text-decoration: none;
+    color: #000000;
+}
+/*  */
+/* animation */
+/* @keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+} */

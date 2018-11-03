@@ -17,6 +17,7 @@
     <header>
          <nav>
             <ul id="navbar">
+                    <a class="icon-bar logo" href="index.html"><i class="icon"></i></a>
                     <a class="icon-bar" href="https://facebook.com/authorjpcbryant/" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a> 
                     <a class="icon-bar" href="https://twitter.com/JpcBryant" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a> 
                     <a class="icon-bar" href="https://instagram.com/jpc_bryant/?hl=en" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
@@ -35,14 +36,15 @@
         </nav>
     </header>
     <main>
-        <h2>A Detective's Tale:</h2>
+        <section class="wrapper">
+            <h2>A Detective's Tale:</h2>
             <div class="book-title book-page-title">Latent Lines of London</div>
             <img class="book-pic" src="resources/london.jpg" alt="latent lines of london." title="Latent Lines of London">
             <p>The second book in the series, A Detective’s Tale. The story unfolds following the events that took place in Howth. Following up on the young detective’s discoveries. The secret organization of Sanctus Presidio launches an investigation into the mysterious organization that has been revealed.</p>
             <p>What sinister plot are they devising in England? Is there a connection to their activities in Howth? Who are they exactly, and what are their goals? Follow along as these inquiries are researched and disturbing truths are brought to light.</p>
             <!-- begin form purchase code -->
             <form>
-                    <select name="list" id="list" accesskey="target" >
+                    <select name="list" id="list" accesskey="target" class="vendor" >
                         <option value='none' selected>Select Vendor</option>
                         <option value="https://www.amazon.com/Latent-Lines-London-Detectives-Tale-ebook/dp/B07HNRF7DW/">Amazon(Kindle)</option>
                         <option value="https://www.barnesandnoble.com/w/latent-lines-of-london-jpc-bryant/1129626274?ean=9780692193860">Barnes & Noble(Nook)</option>
@@ -55,13 +57,14 @@
                         <option value="https://www.lix.com/en/books/9780692193860">Lix</option>
                         <option value="https://www.wook.pt/ebook/latent-lines-of-london-jpc-bryant/22283656">Wook</option>
                     </select>
-                    <input id="btn" type="button" value="Purchase From This Vendor" onclick="goToNewPage()"/>
+                    <input class="purchase" id="btn" type="button" value="Purchase From This Vendor" onclick="goToNewPage()"/>
                     </form>
             <!-- end form purchase code -->
+            </section>
     </main>
     <footer>
         <div class="legal">
-            <a href="#">Privacy Policy</a></br>
+            <a href="privacy-policy.html">Privacy Policy</a></br>
         </div>
         <div class="copyright">
             <p2>&copy; Bryant Books, LLC. All Rights Reserved.</p2></br>

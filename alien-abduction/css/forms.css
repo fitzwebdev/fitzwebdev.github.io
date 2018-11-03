@@ -31,7 +31,7 @@ html {
       flex-basis: 33%;
   }
   p,
-  [for="abtype"], {
+  [for="abtype"] {
     margin-bottom: 0;
     margin-top: 2rem;
 }

@@ -66,6 +66,8 @@ html, body {
 	background-color: #00E5B3;
 	margin: 20px auto;
 } */
+
+/* responsiveness */
 @media screen and (max-width: 768px) {
 	.content h1 {
 		font-size: 3.1rem;

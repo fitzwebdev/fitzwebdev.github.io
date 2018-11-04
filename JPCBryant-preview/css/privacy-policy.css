@@ -19,3 +19,25 @@ h4{
 ol li {
     margin-bottom: 1rem;
 }
+
+/* responsiveness */
+@media screen and (max-width: 768px) {
+    ol li {
+        list-style-type: none;
+    }
+    h1 {
+        font-size: 2.7rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    h4{
+        font-size: 1rem;
+    }
+    ol li {
+        margin-bottom: .5rem;
+    }
+}

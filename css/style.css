@@ -8,6 +8,9 @@ html {
     margin: 0;
     padding: 0;
 }
+body {
+    font-family: 'Cabin', sans-serif;
+}
 .welcome {
     height: 100vh;
     background: linear-gradient(-45deg, #C8E1E1, #849494, #62A6A6, #8BEBEB, #5F6B6B);
@@ -67,6 +70,7 @@ nav ul li a:hover {
     top: 0;
     background-color: #5F6B6B;
     border-bottom: 4px solid #8BEBEB;
+    z-index: 99;
 }
 footer {
     text-align: center;
@@ -102,6 +106,7 @@ h2 {
     margin: 2rem 1rem;
     padding: .5rem;
     color: #ffffff;
+    transition: 1s;
 }
 .contact a:hover {
     background-color: #5F6B6B;
@@ -109,8 +114,8 @@ h2 {
     color: #8BEBEB;
 }
 .about p {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
     text-align: left;
     margin: 0 25% 2rem 25%;
 }

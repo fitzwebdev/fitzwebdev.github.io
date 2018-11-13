@@ -4,7 +4,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 body {
-    background: url('../resources/bookbackground.jpg') repeat 50% 50%;
+    background: url('../resources/bookbackground.jpg') repeat center center fixed;
     background-size: contain;
 }
 .handwritten {
@@ -34,7 +34,7 @@ nav ul li.dropdown {
 nav ul li a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: bold;
     transition: .5s;
 }

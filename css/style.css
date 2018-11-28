@@ -194,3 +194,12 @@ a {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 3rem;
+    }
+    .about p {
+        margin: 0 13% 2rem 13%;
+    }
+}

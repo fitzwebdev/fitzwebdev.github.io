@@ -74,3 +74,15 @@ img {
         transform: rotateZ(360deg);
     }
 }
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 2rem;
+    }
+    select {
+        font-size: 1rem;
+    }
+    nav ul {
+        padding: .5rem;
+    }
+  }

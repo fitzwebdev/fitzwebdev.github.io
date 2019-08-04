@@ -1,0 +1,148 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Setting up section heights */
+.parallax1 {
+    background-image: url(images/Parallax1.JPG);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 {
+    background-image: url(images/Parallax2.JPG);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.intro {
+    height: 100vh;
+    background-image: url(images/Intro.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.missionstate {
+    min-height: 100vh;
+    padding-top: 4.5rem;
+    text-align: center;
+    background-color: #0156E7;
+    padding-bottom: 1rem;
+}
+.kiddos {
+    min-height: 100vh;
+    padding-top: 4.5rem;
+    text-align: center;
+    background-color: #0156E7;
+    padding-bottom: 1rem;
+}
+.donate {
+    min-height: 100vh;
+    padding-top: 4.5rem;
+    text-align: center;
+    background-color: #0156E7;
+    padding-bottom: 1rem;
+}
+.contact {
+    min-height: 75vh;
+    padding-top: 4.5rem;
+    text-align: center;
+    background-color: #ffffff;
+    padding-bottom: 1rem;
+    font-size:3rem;
+}
+form {
+    margin: 8rem 0;
+}
+/* Set-up for the sticky navigation */
+nav ul {
+    text-align: right;
+    width: 100%;
+    height: 4rem;
+}
+nav ul li {
+    display: inline-block;
+    border-radius: 3px;
+    margin: 1rem .5rem;;
+    padding: .25rem;
+}
+nav ul li a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #000000;
+    transition: 1s;
+}
+nav ul li a:hover {
+    color: #0156E7;
+}
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    border-bottom: 4px solid #D2A912;
+    z-index: 99;
+}
+/* Set up fonts, etc */
+h1 {
+    color: #0156E7;
+    font-size: 5rem;
+    /* top: 20%; */
+    transform: translateY(100%);
+    position: center;
+    text-shadow: -2px 0 black, 0 1px black, 2px 0 black, 0 -2px black;
+}
+h2 {
+    color: #000000;
+    font-size: 5rem;
+    position: center;
+    padding-bottom: 3rem;
+}
+h3 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+    text-shadow: -1px 0 #D2A912, 0 1px #D2A912, 1px 0 #D2A912, 0 -1px #D2A912;
+}
+p {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    text-align: left;
+    Margin:0 15% 2rem 15%
+}
+footer p {
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.contact P {
+    text-align: center;
+}
+.kiddoimg {
+    border: 2px solid #D2A912;
+    border-radius: 15%;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    h1,
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+}

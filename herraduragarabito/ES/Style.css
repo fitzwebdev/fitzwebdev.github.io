@@ -145,4 +145,7 @@ footer p {
         font-size: 1.25rem;
         line-height: 1.75rem;
     }
+    .parallax {
+        background-attachment: scroll;
+      }
 }

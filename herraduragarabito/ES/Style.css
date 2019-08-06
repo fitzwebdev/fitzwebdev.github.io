@@ -27,9 +27,9 @@ html {
 }
 .intro {
     height: 100vh;
-    background-image: url(images/Intro.jpg);
+    background-image: url(images/Intro2.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: 65%;
     text-align: center;
     padding-bottom: 1rem;
 }
@@ -98,7 +98,7 @@ h1{
     color: #0156E7;
     font-size: 5rem;
     /* top: 20%; */
-    transform: translateY(100%);
+    transform: translateY(80%);
     position: center;
     text-shadow: -2px 0 black, 0 1px black, 2px 0 black, 0 -2px black;
 }
@@ -128,11 +128,17 @@ footer p {
 .contact P {
     text-align: center;
 }
-.kiddoimg {
+.kiddoimg,
+.coachimg {
     border: 2px solid #D2A912;
-    border-radius: 15%;
+    border-radius: 5px;
 }
-
+.insta-image {
+    height: 15.75rem;
+    width: 15.75rem;
+    border: 3px solid black;
+    margin: 2px;
+}
 
 
 

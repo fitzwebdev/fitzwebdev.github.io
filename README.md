@@ -7,7 +7,7 @@ This repo is being used for the prework capstone for applying to VetsWhoCode.io.
    1. Personal Brand
       + In progress (started 6/17/2020)
    2. Markdown
-      +Tutorial completed 6/17/2020
+      + Tutorial completed 6/17/2020
 2. **Know Your Tool**
    1. Code Editor
       + Completed. 

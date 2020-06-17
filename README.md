@@ -1,6 +1,4 @@
 # fitzwebdev.github.io
-Thomas Fitzgerald's website on GitHub.
 
-My current "Portfolio" site. Will soon redirect to thomasfitzgerald.dev.
-
-This is understandably a mess. Slowly getting fixed up. 
+### Prework for VetsWhoCode.io
+This repo is being used for the prework capstone for applying to VetsWhoCode.io.

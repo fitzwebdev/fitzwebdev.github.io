@@ -1,4 +1,4 @@
-# [Thomas Fitzgerald](fitzwebdev.github.io)
+# Thomas Fitzgerald
 
 ### Prework for VetsWhoCode.io
 This repo is being used for the prework capstone for applying to VetsWhoCode.io.

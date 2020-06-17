@@ -24,3 +24,5 @@ This repo is being used for the prework capstone for applying to VetsWhoCode.io.
 5. **Captstone**
    1. Build a website about you
       + In progress (started 6/17/2020)
+#### Notes
+HTML & CSS and any JavaScript used for page is original. Calculator, Feed a Mole, and Pupper Viewer projects on page were created during a bootcamp hosted by Front End Masters.

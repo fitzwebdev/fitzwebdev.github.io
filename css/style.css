@@ -98,10 +98,10 @@ h2 {
 .welc-name {
     color: #FC4A1A;
 }
-.contact p {
+/*.contact p {
     font-size: 1rem;
     margin-top: -2.5rem;
-}
+}*/
 .contact h2 {
     color: #000000;
 }
@@ -117,13 +117,15 @@ h2 {
     border-radius: 3px;
     color: #4ABDAC;
 }
-.about p {
+.about p,
+.contact p {
     font-size: 1.75rem;
     line-height: 2.5rem;
     text-align: left;
     margin: 0 25% 2rem 25%;
 }
 .welcome p,
+.projects p,
 .welcome-button {
     color: #ffffff;
     padding: 1rem ;
@@ -131,6 +133,7 @@ h2 {
     top: 40%;
     transform: translateY(-40%);
     position: relative;
+    margin: 0 25% 2rem 25%;
 }
 .welcome-button a {
     padding: .5rem 1rem;

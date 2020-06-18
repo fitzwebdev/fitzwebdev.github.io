@@ -13,7 +13,7 @@ This repo is being used for the prework capstone for applying to VetsWhoCode.io.
    1. Code Editor
       + Completed. 
    2. Git
-      + Not Started
+      + Completed Git-it tutorial.
    3. Browser
       + Chrome already default browser
 3. **HTML & CSS**

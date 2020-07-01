@@ -27,4 +27,5 @@ This repo is being used for the prework capstone for applying to VetsWhoCode.io.
 5. **Captstone**
    1. Build a website about you
       + In progress started 6/17/2020
+      + submitted for application 6/30/2020
 #### Notes

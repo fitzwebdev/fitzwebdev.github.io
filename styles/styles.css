@@ -1,3 +1,4 @@
+/* Begin Base Settings */
 * {
     margin: 0;
     padding: 0;
@@ -5,11 +6,23 @@
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
+}
+
+/* Begin Nav Styling */
+
+.nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #011343;
 }
 
 .nav li {
     list-style: none;
+    cursor: default;
 }
 
 a {
@@ -18,18 +31,16 @@ a {
 
 .nav li a {
     display: block;
-    padding: 15px 5px;
+    padding: 15px;
     font-size: 1.2em;
     font-weight: bolder;
-    color: #000000;
+    color: #CBCEDF;
+    cursor: default;
 }
 
-.nav {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: #e4e4e4;
+.nav li a span:hover {
+    color: #A5A7A6;
+    cursor: pointer;
 }
 
 .logo {
@@ -56,9 +67,10 @@ a {
     line-height: 1.5em;
 }
 
+/* Start Hero Styling */
 .background {
     animation: slide 3s ease-in-out infinite alternate;
-    background-image : linear-gradient(-60deg, #de1738 50%, #001daa 50%);
+    background-image : linear-gradient(-60deg, #e51316 50%, #0065d7 50%);
     bottom: 0;
     left: -50%;
     opacity: .5;
@@ -93,10 +105,13 @@ a {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    line-height: 1.5em;
+    font-size:  1.3rem;
 }
 
+/* Start Blog and Work Styling */
 .work-container {
     display: flex;
     flex-direction: row;
@@ -113,7 +128,7 @@ a {
     margin-bottom: 25px;
     margin-left: 10px;
     margin-right: 10px;
-    line-height: 1.5;
+    line-height: 1.5em;
     background-color: #e4e4e4;
 }
 
@@ -137,26 +152,31 @@ a {
     text-align: center;
 }
 
+/* Start Anime Area Styling */
 .anime {
     height: 100px;
     background-color: #e4e4e4;
 }
 
+/* Start Fishing Area Styling */
 .fishing {
     height: 100px;
     background-color: #f6f7f8;
 }
 
+/* Start RPG Area Styling */
 .rpg {
     height: 100px;
     background-color: #e4e4e4;
 }
 
+/* Start Footer & Bottom Website Styling */
 .footer {
     height: 100px;
     background-color: #f6f7f8;
 }
 
+/* Website Responsiveness - Phone */
 @media all and (max-width: 425px) {
     .nav {
         display: flex;
@@ -182,14 +202,20 @@ a {
         text-align: center;
         display: none;
     }
+
     .active .item {
         display: block;
     }
 
+    .hero>.elevator {
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 1.1rem;
+    }
 }
 
-/* keyframes */
 
+/* keyframes */
 @keyframes slide {
     0% {
         transform: translateX(-25%);

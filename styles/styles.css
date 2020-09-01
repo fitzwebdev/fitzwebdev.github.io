@@ -33,18 +33,14 @@ a {
     text-align: center;
 }
 
-
 .nav li a {
     display: block;
     padding: 15px 5px;
 }
 
-
-
 .toggle {
     display: none;
 }
-
 
 .hero {
     display: flex;

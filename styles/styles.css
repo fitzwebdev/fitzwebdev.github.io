@@ -11,6 +11,10 @@ body {
     color: #ffffff;
 }
 
+h1 {
+    font-size: 1.2em;
+}
+
 /* Begin Nav Styling */
 
 .nav {

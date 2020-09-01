@@ -1,7 +1,6 @@
 const toggle = document.querySelector(".toggle");
 const nav = document.querySelector(".nav");
  
-
 function toggleNav() {
     if (nav.classList.contains("active")) {
         nav.classList.remove("active");

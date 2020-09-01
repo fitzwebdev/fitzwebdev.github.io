@@ -4,12 +4,24 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: 16px;
+}
+
 .nav li {
     list-style: none;
 }
 
 a {
     text-decoration: none;
+}
+
+.nav li a {
+    display: block;
+    padding: 15px 5px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: #000000;
 }
 
 .nav {
@@ -31,11 +43,6 @@ a {
     display: block; 
     width: auto;
     text-align: center;
-}
-
-.nav li a {
-    display: block;
-    padding: 15px 5px;
 }
 
 .toggle {
@@ -122,7 +129,7 @@ a {
     margin-bottom: 25px;
     margin-left: 10px;
     margin-right: 10px;
-    line-height: 1.5;
+    line-height: 1.5em;
     background-color: #e4e4e4;
 }
 

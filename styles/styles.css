@@ -8,6 +8,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    color: #ffffff;
 }
 
 /* Begin Nav Styling */
@@ -34,12 +35,13 @@ a {
     padding: 15px;
     font-size: 1.2em;
     font-weight: bolder;
-    color: #CBCEDF;
+    color: #ffffff;
     cursor: default;
 }
 
 .nav li a span:hover {
-    color: #A5A7A6;
+    /* color: #A5A7A6; */
+    color: #e51316;
     cursor: pointer;
 }
 
@@ -108,7 +110,7 @@ a {
     margin-left: 20%;
     margin-right: 20%;
     line-height: 1.5em;
-    font-size:  1.3rem;
+    font-size:  1.3em;
 }
 
 /* Start Blog and Work Styling */
@@ -117,7 +119,13 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #f6f7f8;
+    background-color: #00629f;
+    border-top: 1px;
+    border-bottom: 1px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: solid;
+    border-color: #000000;
 }
 
 .blog {
@@ -129,11 +137,17 @@ a {
     margin-left: 10px;
     margin-right: 10px;
     line-height: 1.5em;
-    background-color: #e4e4e4;
+    background-color: #fd3d40;
+    border: 1px;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 5px;
 }
 
-.blog-title {
+.blog-title, .work-title {
     text-align: center;
+    font-size: 1.3em;
+    line-height: 1.3em;
 }
 
 .work {
@@ -145,35 +159,62 @@ a {
     margin-left: 10px;
     margin-right: 10px;
     line-height: 1.5em;
-    background-color: #e4e4e4;
-}
-
-.work-title {
-    text-align: center;
+    background-color: #fd3d40;
+    border: 1px;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 5px;
 }
 
 /* Start Anime Area Styling */
 .anime {
     height: 100px;
-    background-color: #e4e4e4;
+    background-color: #fd3d40;
 }
 
 /* Start Fishing Area Styling */
 .fishing {
     height: 100px;
-    background-color: #f6f7f8;
+    background-color: #00629f;
+    border-top: 1px;
+    border-bottom: 1px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: solid;
+    border-color: #000000;
 }
 
 /* Start RPG Area Styling */
 .rpg {
     height: 100px;
-    background-color: #e4e4e4;
+    background-color: #fd3d40;
 }
 
 /* Start Footer & Bottom Website Styling */
 .footer {
-    height: 100px;
-    background-color: #f6f7f8;
+    background-color: #011343;
+    border-top: 1px;
+    border-bottom: 1px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: solid;
+    border-color: #000000;
+}
+
+.footer-title {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.email-me {
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.copyright {
+    padding-bottom: 5px;
+    text-align: center;
 }
 
 /* Website Responsiveness - Phone */

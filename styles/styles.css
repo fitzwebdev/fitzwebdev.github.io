@@ -134,22 +134,6 @@ a {
     border-color: #000000;
 }
 
-.blog {
-    justify-content: center;
-    align-items: center;
-    flex: auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
-    line-height: 1.5em;
-    background-color: #AF1215;
-    border: 1px;
-    border-style: solid;
-    border-color: #000000;
-    border-radius: 5px;
-}
-
 .blog-title, .work-title {
     text-align: center;
     font-size: 1.3em;
@@ -157,14 +141,10 @@ a {
     font-weight: bold;
 }
 
+.blog,
 .work {
-    justify-content: center;
-    align-items: center;
     flex: auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 25px 25px;
     line-height: 1.5em;
     background-color: #AF1215;
     border: 1px;

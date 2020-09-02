@@ -144,7 +144,7 @@ a {
 .blog,
 .work {
     flex: auto;
-    margin: 25px 25px;
+    margin: 25px;
     line-height: 1.5em;
     background-color: #AF1215;
     border: 1px;
@@ -289,6 +289,11 @@ a {
         margin-left: 10%;
         margin-right: 10%;
         font-size: 1.1rem;
+    }
+
+    .blog,
+    .work {
+        margin: 10px;
     }
 }
 

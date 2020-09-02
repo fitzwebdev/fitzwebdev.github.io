@@ -249,7 +249,7 @@ a {
 }
 
 
-.contact-wrapper button {
+.contact-wrapper .button {
     display: flex;
     justify-content: center;
 	margin: 0 auto;
@@ -260,7 +260,7 @@ a {
 	padding: 8px 16px;
 	border-radius: 5px;
 }
-.contact-wrapper button:hover {
+.contact-wrapper .button:hover {
     background-color: #011343;
     outline: 2px;
     outline-style: solid;

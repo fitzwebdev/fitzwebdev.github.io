@@ -174,8 +174,13 @@ a {
 
 /* Start RPG Area Styling */
 .rpg {
-    height: 100px;
+    align-text: center;
     background-color: #AF1215;
+}
+
+.rpg-title {
+    text-align: center;
+    padding-top: 50px;
 }
 
 /* Start Footer & Bottom Website Styling */

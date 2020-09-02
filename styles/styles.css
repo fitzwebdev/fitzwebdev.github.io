@@ -181,6 +181,11 @@ a {
 .rpg-title {
     text-align: center;
     padding-top: 50px;
+    padding-bottom: 45px;
+}
+
+.rpg-paragraph {
+    text-align: center;
 }
 
 /* Start Footer & Bottom Website Styling */

@@ -91,6 +91,12 @@ DD8DDNNDDNNNNNNNNNNNNNNNNNMNMNNNNNNMMNNMMNNN8ZZ$$$$7$7777?~~~~~~:~:~~~~~~~:::~:,
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>Thomas Fitzgerald</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init('user_cZEa5oVnr8VfGhTFYm2r9');
+        })();
+    </script>
 </head>
 <body>
     <header>
@@ -155,13 +161,36 @@ DD8DDNNDDNNNNNNNNNNNNNNNNNMNMNNNNNNMMNNMMNNN8ZZ$$$$7$7777?~~~~~~:~:~~~~~~~:::~:,
     <!-- end rpg -->
     <footer class="footer">
         <h2 class="footer-title">Before you go!</h2>
-        <p class = "email-me">[A form to contact me directly is going to go here]</p>
+        <p class="footer-paragraph">Hit me up and let's rock a project, or just have a chat.</p>
+        <div class="contact-wrapper">
+        <form id="contact-form">
+            <label>Name:</label>
+            <input type="text" name="user_name" placeholder="First & Last">
+            <label>Email:</label>
+            <input type="email" name="user_email" placeholder="example@email.com">
+            <label>Message:</label>
+            <textarea name="message" placeholder="Howdy, let's chat!"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
         <p class = "copyright">Thomas Fitzgerald &copy; <script language="javascript" type="text/javascript">
-                var today = new Date()
-                var year = today.getFullYear()
-                document.write(year)
+                var today = new Date();
+                var year = today.getFullYear();
+                document.write(year);
                 </script></p>
     </footer>
     <script src="scripts/scripts.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate the contact number value
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('contact_service', 'contact_form', this);
+                alert('Thanks for reaching out! I look forward to reading your message.');
+                document.getElementById('contact_form').reset();
+            });
+        }
+    </script>
 </body>
 </html>

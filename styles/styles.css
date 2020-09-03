@@ -188,6 +188,21 @@ a {
     text-align: center;
 }
 
+.iframe-div {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    padding-bottom: 56.25%;
+}
+
+.iframe-game {
+    position: absolute;
+    top: 45px;
+    left: 12.5%;
+    width: 75%;
+    height: 75%;
+}
+
 /* Start Footer & Bottom Website Styling */
 .footer {
     background-color: #011343;

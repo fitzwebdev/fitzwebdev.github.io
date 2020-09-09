@@ -131,13 +131,6 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #00629f;
-    border-top: 1px;
-    border-bottom: 1px;
-    border-left: 0px;
-    border-right: 0px;
-    border-style: solid;
-    border-color: #000000;
 }
 
 .blog-title, .work-title {
@@ -150,67 +143,16 @@ a {
 .blog,
 .work {
     flex: 1;
+    text-align: center;
     min-width: 310px;
     margin: 25px;
     line-height: 1.5em;
-    background-color: #AF1215;
-    border: 1px;
-    border-style: solid;
-    border-color: #000000;
-    border-radius: 5px;
 }
 
-/* Start Anime Area Styling */
-.anime {
-    height: 100px;
-    background-color: #AF1215;
-}
 
-/* Start Fishing Area Styling */
-.fishing {
-    height: 100px;
-    background-color: #00629f;
-    border-top: 1px;
-    border-bottom: 1px;
-    border-left: 0px;
-    border-right: 0px;
-    border-style: solid;
-    border-color: #000000;
-}
-
-/* Start RPG Area Styling */
-.rpg {
-    text-align: center;
-    background-color: #AF1215;
-}
-
-.rpg-title {
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 45px;
-}
-
-.rpg-paragraph {
-    text-align: center;
-}
-
-.iframe-div {
-    position: relative;
-    overflow: hidden;
-    height: 100%;
-    padding-bottom: 56.25%;
-}
-
-.iframe-game {
-    position: absolute;
-    top: 45px;
-    left: 12.5%;
-    width: 75%;
-    height: 75%;
-}
 
 /* Start Footer & Bottom Website Styling */
-.footer {
+/* .footer {
     background-color: #011343;
     border-top: 1px;
     border-bottom: 1px;
@@ -218,7 +160,7 @@ a {
     border-right: 0px;
     border-style: solid;
     border-color: #000000;
-}
+} */
 
 .footer-title {
     padding-top: 15px;
@@ -251,7 +193,7 @@ a {
     font-size: 1em;
     border: 2px;
     border-style: solid;
-    border-color: #e51316;
+    border-color: #000000;
     border-radius: 5px;
     padding: 5px 10px;
 }
@@ -265,7 +207,7 @@ a {
     display: flex;
     justify-content: center;
 	margin: 0 auto;
-	background-color: #e51316;
+	background-color: #011343;
 	color: #ffffff;
 	border: none;
 	font-size: 1em;

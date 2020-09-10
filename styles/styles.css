@@ -297,6 +297,7 @@ a {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
     }
 
     .nav li a {
@@ -335,6 +336,10 @@ a {
     .contact-modal-content {
         width: 15em;
         transform: translate(-53%, -50%);
+    }
+
+    .footer {
+        width: 100%;
     }
 }
 

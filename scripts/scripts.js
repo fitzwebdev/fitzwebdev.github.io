@@ -22,19 +22,20 @@ toggle.addEventListener("click", toggleNav, false);
 
 
 
-// For RPG section game. 
+// For modal contact form
+var modal = document.querySelector(".contact-modal");
+var trigger = document.querySelector(".contact-trigger");
 
-window.onload = function() {
-    var thegamelink = "https://play.idevgames.co.uk/embed/oscuros-reign";
-    var ref = document.referrer;
-    var theurl = document.referrer;
-    ref = ref.substring(ref.indexOf("://") + 3);
-    ref = ref.split("/")[0];
-    if(ref == "my-ga.me"){
-    theurl = "true"
-    } else {
-        theurl = "false"
-    } 
-    document.getElementById("embededGame").src = thegamelink+"/"+theurl;
+function toggleContactModal() {
+    modal.classList.toggle("show-contact-modal");
 }
+
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleContactModal();
+    }
+}
+
+trigger.addEventListener("click", toggleContactModal);
+window.addEventListener("click", windowOnClick);
 

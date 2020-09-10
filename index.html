@@ -84,6 +84,7 @@ DD8DDNNDDNNNNNNNNNNNNNNNNNMNMNNNNNNMMNNMMNNN8ZZ$$$$7$7777?~~~~~~:~:~~~~~~~:::~:,
 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -91,19 +92,22 @@ DD8DDNNDDNNNNNNNNNNNNNNNNNMNMNNNNNNMMNNMMNNN8ZZ$$$$7$7777?~~~~~~:~:~~~~~~~:::~:,
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>Thomas Fitzgerald</title>
-    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function() {
+        (function () {
             emailjs.init("user_cZEa5oVnr8VfGhTFYm2r9");
         })();
     </script>
 </head>
+
 <body>
     <header>
         <!-- nav area -->
         <nav>
             <ul class="nav">
-                <li class="logo"><a href="#"><h1><span>Thomas Fitzgerald</span></h1></a></li>
+                <li class="logo"><a href="#">
+                        <h1><span>Thomas Fitzgerald</span></h1>
+                    </a></li>
                 <li class="item"><a href="#"><span>Home</span></a></li>
                 <li class="item"><a href="#"><span>About</span></a></li>
                 <li class="item"><a href="#"><span>Contact</span></a></li>
@@ -118,7 +122,10 @@ DD8DDNNDDNNNNNNNNNNNNNNNNNMNMNNNNNNMMNNMMNNN8ZZ$$$$7$7777?~~~~~~:~:~~~~~~~:::~:,
         <div class="background background2"></div>
         <div class="background background3"></div>
         <img class="hero-img" src="img/Thomas2.jpg" alt="Profile Picture" title="Thomas Fitzgerald">
-        <p class="elevator">I’m Thomas! I’m a Front-End Developer that also happens to be a bit of a nerd when it comes to things like fishing and D&D. My jam is creating beautiful and responsive websites with HTML, CSS and JavaScript. I think contributing to Open Source is incredibly important and essential to growth as a developer.</p>
+        <p class="elevator">I’m Thomas! I’m a Front-End Developer that also happens to be a bit of a nerd when it comes
+            to things like fishing and D&D. My jam is creating beautiful and responsive websites with HTML, CSS and
+            JavaScript. I think contributing to Open Source is incredibly important and essential to growth as a
+            developer.</p>
     </div>
     <!-- end hero -->
     <div class="work-container">
@@ -135,46 +142,61 @@ DD8DDNNDDNNNNNNNNNNNNNNNNNMNMNNNNNNMMNNMMNNN8ZZ$$$$7$7777?~~~~~~:~:~~~~~~~:::~:,
         <aside class="work">
             <div class="work-title">Here are a few things I've been working on.</div>
             <div class="work-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, illum.</div>
-            <div class="work-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eaque.
-                <div class="work-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, eligendi.</div>
-                <div class="work-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, amet?</div>
+            <div class="work-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eaque.</div>
+            <div class="work-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, eligendi.</div>
+            <div class="work-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, amet?</div>
         </aside>
         <!-- end left aside -->
     </div>
-    
+
+
     <footer class="footer">
-        <h2 class="footer-title">Before you go!</h2>
-        <p class="footer-paragraph">Hit me up and let's rock a project or chat!</p>
-        <div class="contact-wrapper">
-        <form id="contact-form">
-            <input type="hidden" name="contact_number">
-            <label>Name:</label>
-            <input type="text" name="user_name" placeholder="First & Last">
-            <label>Email:</label>
-            <input type="email" name="user_email" placeholder="example@email.com">
-            <label>Message:</label>
-            <textarea name="message" placeholder="Let's chat!"></textarea>
-            <input class="button" type="submit" value="Send">
-        </form>
+        <!-- <h2 class="footer-title">Before you go!</h2>
+        <p class="footer-paragraph">Hit me up and let's rock a project or chat!</p> -->
+        <div class="contact-modal">
+            <div class="contact-modal-content">
+                <form id="contact-form">
+                    <input type="hidden" name="contact_number">
+                    <label>Name:</label>
+                    <input type="text" name="user_name" placeholder="First & Last">
+                    <label>Email:</label>
+                    <input type="email" name="user_email" placeholder="example@email.com">
+                    <label>Message:</label>
+                    <textarea name="message" placeholder="Let's chat!"></textarea>
+                    <input class="button" type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+        <div class="flex-footer-content">
+            <div class="footer-contact-button">
+            <h2>Before you go..  </h2>
+        <button class="contact-trigger footer-button">Hit Me Up!</button>
     </div>
-        <p class = "copyright">Thomas Fitzgerald &copy; <script language="javascript" type="text/javascript">
+    
+        <p class="copyright">Thomas Fitzgerald &copy;
+            <script language="javascript" type="text/javascript">
                 var today = new Date();
                 var year = today.getFullYear();
                 document.write(year);
-                </script></p>
+            </script>
+        </p>
+    
+</div>
     </footer>
+
     <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
                 event.preventDefault();
                 // generate the contact number value
                 this.contact_number.value = Math.random() * 100000 | 0;
                 emailjs.sendForm('contact_service', 'contact_form', this);
-            alert("Awesome, I can't wait to read your message!")
-            document.getElementById("contact-form").reset();
+                alert("Awesome, I can't wait to read your message!")
+                document.getElementById("contact-form").reset();
             });
         }
     </script>
     <script src="scripts/scripts.js"></script>
 </body>
+
 </html>

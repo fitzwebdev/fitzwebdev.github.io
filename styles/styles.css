@@ -235,10 +235,13 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image : linear-gradient(-60deg, #ff0004 50%, #0065d7 50%);
+    background-image : linear-gradient(-60deg, #ff0004, #0065d7);
     padding: 1em;
     width: 20.3em;
     border-radius: 10px;
+    border: 2px;
+    border-style: solid;
+    border-color: #000000;
 }
 
 .show-contact-modal {

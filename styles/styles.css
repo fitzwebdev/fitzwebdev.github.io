@@ -145,6 +145,10 @@ a {
     font-weight: bold;
 }
 
+.blog-card, .work-block {
+    padding-top: 50px;
+}
+
 .blog,
 .work {
     flex: 1;

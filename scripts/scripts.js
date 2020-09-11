@@ -25,6 +25,7 @@ toggle.addEventListener("click", toggleNav, false);
 // For modal contact form
 var modal = document.querySelector(".contact-modal");
 var trigger = document.querySelector(".contact-trigger");
+var closeButton = document.querySelector(".close-button");
 
 function toggleContactModal() {
     modal.classList.toggle("show-contact-modal");
@@ -37,5 +38,6 @@ function windowOnClick(event) {
 }
 
 trigger.addEventListener("click", toggleContactModal);
+closeButton.addEventListener("click", toggleContactModal);
 window.addEventListener("click", windowOnClick);
 

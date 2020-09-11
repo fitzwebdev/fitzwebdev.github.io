@@ -303,6 +303,20 @@ a {
     border-color: #000000;
 }
 
+.close-button {
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+    width: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25em;
+}
+.close-button:hover {
+    background-color: #0065d7;
+}
+
 .show-contact-modal {
     opacity: 1;
     visibility: visible;
@@ -312,6 +326,7 @@ a {
 .contact-modal-cotent label{
     display: block;
     padding-bottom: 5px;
+    margin-top: 50px;
 }
 
 .contact-modal-content input,

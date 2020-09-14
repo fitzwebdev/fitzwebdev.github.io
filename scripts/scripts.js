@@ -55,3 +55,13 @@ function switchTheme(event) {
 }
 
 toggleSwitch.addEventListener('change', switchTheme, false);
+
+const currentTheme = localStorage.getItem('theme') || null;
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    if (currentTheme === 'darkmode') {
+        toggleSwitch.checked = true;
+    }
+}

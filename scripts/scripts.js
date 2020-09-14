@@ -41,3 +41,28 @@ trigger.addEventListener("click", toggleContactModal);
 closeButton.addEventListener("click", toggleContactModal);
 window.addEventListener("click", windowOnClick);
 
+// dark theme set up
+const toggleSwitch = document.querySelector('.switch input[type = "checkbox"]');
+
+function switchTheme(event) {
+    if (event.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'darkmode');
+        localStorage.setItem('theme', 'darkmode');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'lightmode');
+        localStorage.setItem('theme', 'lightmode');
+    }
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+//check for saved theme preference
+const currentTheme = localStorage.getItem('theme') || null;
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    if (currentTheme === 'darkmode') {
+        toggleSwitch.checked = true;
+    }
+}

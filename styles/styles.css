@@ -5,14 +5,48 @@
     box-sizing: border-box;
 }
 
+:root {
+    --css-moving-background: linear-gradient(-60deg, #ff0004 50%, #0065d7 50%);
+    --body-text-color: #ffffff;
+    --menu-text-color-hover: #e51316;
+    --images-filter: brightness(100%) contrast(100%);
+    --nav-background-color: #011343;
+    --css-modal-background: linear-gradient(-60deg, #ff0004, #0065d7);
+    --contact-button-border-color: #ffffff;
+    --contact-button-background-color: #011343;
+    --contact-button-background-color-hover: #ffffff;
+    --contact-button-outline-color-hover: #e51316;
+    --contact-button-text-color-hover: #011343;
+    --textarea-background-color: #ffffff;
+}
+
+[data-theme = "darkmode"] {
+    --css-moving-background: linear-gradient(-60deg, #150024 50%, #7e2800 50%);
+    --body-text-color: #ffffff91;
+    --menu-text-color-hover: #e513167c;
+    --images-filter: brightness(70%) contrast(90%);
+    --nav-background-color: #000920;
+    --css-modal-background: linear-gradient(-60deg, #150024, #7e2800);
+    --contact-button-border-color: #ffffff91;
+    --contact-button-background-color: #000920;
+    --contact-button-background-color-hover: #ffffff91;
+    --contact-button-outline-color-hover: #e513167c;
+    --contact-button-text-color-hover: #000920;
+    --textarea-background-color: #b3b1b1;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color: #ffffff;
+    color: var(--body-text-color);
     letter-spacing: .04em;
     min-height: 100%;
     min-height: 100vh;
     position: relative;
+}
+
+img {
+    filter: var(--images-filter);
 }
 
 h1 {
@@ -27,13 +61,7 @@ h1 {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-start;
-    background-color: #011343;
-    border-bottom: 1px;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-style: solid;
-    border-color: #000000;
+    background-color: var(--nav-background-color);
 }
 
 .nav li {
@@ -50,13 +78,13 @@ a {
     padding: 15px;
     font-size: 1.2em;
     font-weight: bolder;
-    color: #ffffff;
+    color: var(--body-text-color);
     cursor: default;
 }
 
 .nav li a span:hover {
     /* color: #A5A7A6; */
-    color: #e51316;
+    color: var(--menu-text-color-hover);
     cursor: pointer;
 }
 
@@ -114,6 +142,10 @@ a {
     transform: translateX(26px);
   }
 
+  .switch input {
+    display:none;
+  }
+
   .slider.round {
     border-radius: 34px;
     padding-top: 10px;
@@ -144,9 +176,11 @@ a {
 }
 
 /* Start Hero Styling */
+
+
 .background {
     animation: slide 3s ease-in-out infinite alternate;
-    background-image : linear-gradient(-60deg, #ff0004 50%, #0065d7 50%);
+    background-image : var(--css-moving-background);
     bottom: 0;
     left: -50%;
     opacity: .5;
@@ -226,7 +260,7 @@ a {
    right: 0;
    left: 0;
    bottom: 0;
-   background-color: #011343;
+   background-color: var(--nav-background-color);
    padding-bottom: 22px;
    width: 100%;
 }
@@ -241,25 +275,24 @@ a {
 
 
 .contact-trigger {
-	background-color: #011343;
-	color: #ffffff;
+	background-color: var(--contact-button-background-color);
+	color: var(--body-text-color);
     border: 2px;
     border-style: solid;
-    border-color: #ffffff;
+    border-color: var(--contact-button-border-color);
 	font-size: 1em;
 	padding: 8px 16px;
     border-radius: 5px;
 }
 
 .contact-trigger:hover {
-    background-color: #ffffff;
-    color: #011343;
+    background-color: var(--contact-button-background-color-hover);
+    color: var(--contact-button-text-color-hover);
     font-weight: bolder;
     outline: 10px;
     outline-style: auto;
-    outline-color: #e51316;
+    outline-color: var(--contact-button-outline-color-hover);
     cursor: pointer;
-    border-color: #011343
 }
 
 .footer-contact-button {
@@ -294,7 +327,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image : linear-gradient(-60deg, #ff0004, #0065d7);
+    background-image : var(--css-modal-background);
     padding: 1em;
     width: 20.3em;
     border-radius: 10px;
@@ -339,6 +372,12 @@ a {
     border-color: #011343;
     border-radius: 5px;
     padding: 5px 10px;
+    background-color: var(--textarea-background-color);
+}
+
+.contact-modal-content input::placeholder,
+.contact-modal-content textarea::placeholder {
+    color: #181818;
 }
 
 .contact-modal-content textarea {
@@ -351,8 +390,8 @@ a {
     display: flex;
     justify-content: center;
 	margin: 0 auto;
-	background-color: #011343;
-	color: #ffffff;
+	background-color: var(--contact-button-background-color);
+	color: var(--body-text-color);
 	border: none;
 	font-size: 1em;
 	padding: 8px 16px;
@@ -362,7 +401,7 @@ a {
     background-color: #011343;
     outline: 2px;
     outline-style: solid;
-    outline-color: #ffffff;
+    outline-color: var(--body-text-color);
     cursor: pointer;    
 }
 
@@ -420,6 +459,22 @@ a {
     }
 }
 
+/* detect user system preference for darkmode at OS level */
+@media (prefers-color-scheme: dark) {
+    [data-theme = "darkmode"] {
+        --css-moving-background: linear-gradient(-60deg, #150024 50%, #7e2800 50%);
+        --body-text-color: #ffffff91;
+        --menu-text-color-hover: #e513167c;
+        --images-filter: brightness(70%) contrast(90%);
+        --nav-background-color: #000920;
+        --css-modal-background: linear-gradient(-60deg, #150024, #7e2800);
+        --contact-button-border-color: #ffffff91;
+        --contact-button-background-color: #000920;
+        --contact-button-background-color-hover: #ffffff91;
+        --contact-button-outline-color-hover: #e513167c;
+        --contact-button-text-color-hover: #000920;
+    }
+}
 
 /* keyframes */
 @keyframes slide {

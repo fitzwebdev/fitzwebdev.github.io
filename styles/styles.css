@@ -346,6 +346,7 @@ a {
     text-align: center;
     cursor: pointer;
     border-radius: 0.25em;
+    font-size: 1.75em;
 }
 .close-button:hover {
     background-color: #0065d7;

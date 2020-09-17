@@ -47,6 +47,7 @@ body {
 
 img {
     filter: var(--images-filter);
+    height: 350px;
 }
 
 h1 {

@@ -18,8 +18,7 @@ function toggleNav() {
 }
  
 /* Event Listener */
-toggle.addEventListener("click", toggleNav, false);
-
+toggle.addEventListener("click" , toggleNav, false);
 
 
 // For modal contact form

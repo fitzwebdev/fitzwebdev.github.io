@@ -9,7 +9,6 @@
     --css-moving-background: linear-gradient(-60deg, #ff0004 50%, #0065d7 50%);
     --body-text-color: #ffffff;
     --menu-text-color-hover: #e51316;
-    --images-filter: brightness(100%) contrast(100%);
     --nav-background-color: #011343;
     --css-modal-background: linear-gradient(-60deg, #ff0004, #0065d7);
     --contact-button-border-color: #ffffff;
@@ -24,7 +23,6 @@
     --css-moving-background: linear-gradient(-60deg, #150024 50%, #7e2800 50%);
     --body-text-color: #f8f8f8;
     --menu-text-color-hover: #e513167c;
-    --images-filter: brightness(70%) contrast(90%);
     --nav-background-color: #000920;
     --css-modal-background: linear-gradient(-60deg, #150024, #7e2800);
     --contact-button-border-color: #f8f8f8;
@@ -46,7 +44,6 @@ body {
 }
 
 img {
-    filter: var(--images-filter);
     height: 350px;
 }
 
@@ -467,7 +464,6 @@ a {
     --css-moving-background: linear-gradient(-60deg, #150024 50%, #7e2800 50%);
     --body-text-color: #f8f8f8;
     --menu-text-color-hover: #e513167c;
-    --images-filter: brightness(70%) contrast(90%);
     --nav-background-color: #000920;
     --css-modal-background: linear-gradient(-60deg, #150024, #7e2800);
     --contact-button-border-color: #f8f8f8;

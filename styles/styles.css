@@ -252,7 +252,7 @@ a {
 
 /* dev.to styling */
 .devArticle {
-    margin: 1%;
+    margin: 25px auto;
     display: flex;
     border: 2px solid;
     border-radius: 20px;
@@ -509,8 +509,10 @@ a {
         min-width: 100%;
     }
 
+    
+
     .devArticle {
-        margin: auto;
+        margin: 25px auto;
         min-width: 320px;
         padding-left: 15px;
       }

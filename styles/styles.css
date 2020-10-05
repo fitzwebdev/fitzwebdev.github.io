@@ -17,6 +17,7 @@
     --contact-button-outline-color-hover: #e51316;
     --contact-button-text-color-hover: #011343;
     --textarea-background-color: #ffffff;
+    --devto-card-background: #25252548;
 }
 
 [data-theme = "darkmode"] {
@@ -31,6 +32,7 @@
     --contact-button-outline-color-hover: #e513167c;
     --contact-button-text-color-hover: #000920;
     --textarea-background-color: #b3b1b1;
+    --devto-card-background: ;
 }
 
 body {
@@ -43,7 +45,7 @@ body {
     position: relative;
 }
 
-img {
+.hero-img {
     height: 350px;
 }
 
@@ -234,22 +236,76 @@ a {
     font-size: 1.3em;
     line-height: 1.3em;
     font-weight: bold;
+    padding-bottom: 50px;
 }
 
-.blog-card, .work-block {
-    padding-top: 50px;
-}
+
 
 .blog,
 .work {
     flex: 1;
     text-align: center;
-    min-width: 310px;
+    min-width: 500px; 
     margin: 25px;
     line-height: 1.5em;
 }
 
+/* dev.to styling */
+.devArticle {
+    margin: 1%;
+    display: flex;
+    border: 2px solid;
+    border-radius: 20px;
+    min-height: 180px;
+    min-width: 540px;
+    padding: 20px;
+    padding-left: 50px;
+    align-items: center;
+    background-color: var(--devto-card-background);
+  }
+  #devArticle {
+    color: #ffffff;
+    text-decoration: none;
+    width: 100%;
+  }
+  
+#article_title {
+    padding-bottom: 25px;
+    font-size: 1.75em;
+}
 
+  #article_title:hover {
+      color: #1317e5;
+  }
+
+  #profile_image {
+    border: 1px;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+ .article-info {
+    display: flex;
+  }
+
+  .article-info p {
+    margin: 5px;
+    display: flex;
+  }
+  #tags {
+    background-color: #4141414b;
+    color: #ffffff;
+    border-radius: 5px;
+  } 
+
+  #username {
+    text-decoration: underline;
+  }
+
+  #username:hover {
+    color: #1317e5;
+  }
 
 /* Start Footer & Bottom Website Styling */
 
@@ -437,6 +493,10 @@ a {
         display: block;
     }
 
+    .hero-img {
+        height: 250px
+    }
+
     .hero>.elevator {
         margin-left: 10%;
         margin-right: 10%;
@@ -446,6 +506,27 @@ a {
     .blog,
     .work {
         margin: 10px;
+        min-width: 100%;
+    }
+
+    .devArticle {
+        margin: auto;
+        min-width: 320px;
+        padding-left: 15px;
+      }
+
+    #devArticle {
+        color: white;
+        text-decoration: none;
+      }
+
+    #tags {
+        display: none;
+      } 
+    
+    #username {
+        color: #000000;
+        font-weight: bold;
     }
 
     .contact-modal-content {

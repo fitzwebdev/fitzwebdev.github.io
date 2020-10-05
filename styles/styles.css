@@ -307,6 +307,33 @@ a {
     color: #1317e5;
   }
 
+/* Working on section */
+.work-block {
+    margin: 25px auto;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: var(--devto-card-background);
+}
+
+.work-block i {
+    font-size: 15em;
+}
+
+.work-block p {
+    font-size: 1.2em;
+}
+
+.work-block a {
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.work-block a:hover {
+    color: #1317e5;
+}
+
 /* Start Footer & Bottom Website Styling */
 
 .footer {
@@ -529,6 +556,10 @@ a {
     #username {
         color: #000000;
         font-weight: bold;
+    }
+
+    .work-block {
+        width: 100%
     }
 
     .contact-modal-content {

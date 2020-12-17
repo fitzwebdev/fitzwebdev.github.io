@@ -16,7 +16,9 @@ I’m Thomas! I’m a Front-End Developer that also happens to be a bit of a ner
 ### See It Live
 Two places to see it live! 
 Here on GitHub at [fitzwebdev](https://fitzwebdev.github.io/)!
+
 or
+
 On a personal domain at [fitzweb.dev](https://fitzweb.dev/)!
 
 

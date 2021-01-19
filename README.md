@@ -3,7 +3,7 @@
 Yo welcome to my world. Stick around long enough and you might learn something about me. 
 
 ### About
-I’m Thomas! I’m a Front-End Developer that also happens to be a bit of a nerd when it comes to things like fishing and D&D. My jam is creating beautiful and responsive websites with HTML, CSS and JavaScript. I think contributing to Open Source is incredibly important and essential to growth as a developer.
+JavaScript Developer attending @VetsWhoCode bootcamp. My jam is creating beautiful and responsive websites with HTML, CSS, JavaScript and REACT. I think contributing to Open Source is incredibly important and essential to growth as a developer. 
 
 ### Site Features
 + Dark mode. 

@@ -3,7 +3,7 @@
 Yo welcome to my world. Stick around long enough and you might learn something about me. 
 
 ### About
-JavaScript Developer attending Vets Who Code bootcamp. My jam is creating beautiful and responsive websites with HTML, CSS, JavaScript and REACT. I think contributing to Open Source is incredibly important and essential to growth as a developer. 
+JavaScript Developer. My jam is creating beautiful and responsive websites with HTML, CSS, JavaScript and REACT. I think contributing to Open Source is incredibly important and essential to growth as a developer. 
 
 ### Site Features
 + Dark mode. 

@@ -93,6 +93,7 @@ a {
     order: 0;
 }
 
+/* Set up "slider" using a checkbox */
 .switch {
     position: relative;
     display: inline-block;

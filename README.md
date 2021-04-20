@@ -11,11 +11,11 @@ JavaScript Developer. My jam is creating beautiful and responsive websites with 
 + Sliding diagonal background (under content)
 + Left Column - Four most recent articles published to [Dev.to](https://dev.to/fitzwebdev), pulled in by utilizing their API. 
 + Right Column - Link to my [CodePen Work](https://codepen.io/fitzwebdev).
-+ Right Column - Link to my [GitHub Repositories](https://github.com/fitzwebdev?tab=repositories).
++ Right Column - Link to my [GitHub Repositories](https://github.com/fitzcodes?tab=repositories).
 
 ### See It Live
 Two places to see it live! 
-Here on GitHub at [fitzwebdev](https://fitzwebdev.github.io/)!
+Here on GitHub at [fitzcodes](https://fitzcodes.github.io/)!
 
 or
 

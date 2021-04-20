@@ -42,7 +42,7 @@ window.addEventListener("click", windowOnClick);
 
 // dev.to article fetch via api
 
-const api_url = "https://dev.to/api/articles?username=fitzwebdev";
+const api_url = "https://dev.to/api/articles?username=fitzcodes";
 
 async function getArticle() {
     const response = await fetch(api_url);

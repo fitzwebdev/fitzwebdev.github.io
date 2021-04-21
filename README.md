@@ -14,12 +14,8 @@ JavaScript Developer. My jam is creating beautiful and responsive websites with 
 + Right Column - Link to my [GitHub Repositories](https://github.com/fitzcodes?tab=repositories).
 
 ### See It Live
-Two places to see it live! 
 Here on GitHub at [fitzcodes](https://fitzcodes.github.io/)!
 
-or
-
-On a personal domain at [fitzweb.dev](https://fitzweb.dev/)!
 
 
 
